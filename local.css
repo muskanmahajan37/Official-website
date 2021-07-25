@@ -1,0 +1,421 @@
+*{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #F4F4F4;
+}
+
+section{
+    position: relative;
+    min-height: 100vh;
+    min-width: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    position: absolute;
+    left: 0px;
+    top:0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+h1{
+    font-size: 7em;
+    color: black;
+}
+
+h4{
+    text-align: center;
+    font-size: 4em;
+}
+h2{
+   text-align: center;
+}
+
+h5{
+    text-align: center;
+    font-weight: 900;
+} 
+
+h6{
+    font-size: 2rem;
+}
+
+h2{
+    margin: 1px;
+}
+p{
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 1em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+span{
+    display: flex;
+    text-align: justify;
+    letter-spacing: -1px;
+}
+
+button {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+    margin: 20px;
+}
+
+ul{
+    display: flex;
+    position: relative;
+}    
+
+ul li {
+    list-style: none;
+}    
+
+ul li a {
+    display:inline-block ;
+    color: black;
+    font-weight: 800;
+    margin-left: 40px;
+    text-decoration: none;
+}    
+
+ul li a:hover{
+    color:white;
+}    
+
+.D_logo{
+    padding: 5px;
+    height: 80px;
+}
+
+
+.general{
+    position: relative;
+    background-image: url("./img/pexels-anna-shvets-5324939.jpg"); 
+    height: 800px;
+    overflow: hidden;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.general-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 800px;
+    background:whitesmoke;
+}
+
+.general-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+    background:#fff1e6;
+}
+.text{
+    display: flex;
+    min-width: 100vw;
+    min-height: 100vh;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top:-250px;
+} 
+
+
+.success {
+    border-color: #04AA6D;
+    color:green ;
+}
+
+.success:hover {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.info {
+    border-color: #2196F3;
+    color: dodgerblue;
+}
+
+.info:hover {
+    background: #2196F3;
+    color: white;
+}
+
+.container{
+    width:1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: #000;
+    box-shadow: 0 30px 30px rgba(0, 0, 0.5);    
+}
+
+.box .imgBX{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.box .imgBX img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.box:hover .imgBX img{
+    opacity: 0;
+}
+
+.box .content{
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+    width: 80%;
+    height: 60px;
+    background: #fff;
+    transition: 0.5s;
+    overflow: hidden;
+    
+    padding: 15px;
+}
+
+.box:hover .content{
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left:0
+}
+
+.box .content h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.box .content p {
+    margin: 10px 0 0 ; 
+    padding: 0;
+    opacity:0;
+    line-height: 1.2em; 
+    transition: 0.5s;
+    text-align: justify;
+    font-size: 13px;
+}
+
+.box:hover .content p {
+    opacity: 1;
+    transition-delay:0.5s ;
+}
+
+
+.row{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800; 
+}
+
+.column-1 {
+    float: left;
+    /* width: 17%; */
+    padding: 10px;
+    height: 350px; 
+    margin: 20px;
+    background-color:transparent
+}
+
+.column-2 {
+    float: left;
+    /* width: 17%; */
+    padding: 10px;
+    height: 350px; 
+    margin: 14px;
+    background-color:transparent
+}
+
+.column-3 {
+    float: left;
+    /* width: 17%; */
+    padding: 10px;
+    height: 350px; 
+    margin: 14px;
+    background-color:transparent
+}
+
+.general-4{
+    display: flex;
+    align-items: center;
+    height: 700px;
+    flex-direction:row;
+     background:gold; 
+}
+ 
+
+.card {
+    box-shadow: 0 15px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
+
+
+.h2{
+    display: flex;
+    justify-content:center;
+    font-size: 2em;
+    align-items: center;
+    margin-bottom: 10px
+}
+
+.title {
+    color: black;
+    font-size:20px;
+    text-transform: uppercase;
+    font-weight:800 ;
+    margin: 5px;
+}
+
+.button-1 {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.fa{
+    margin-left: 10px;
+}
+.fa.fa-dribbble:hover{
+    color:#E34A85
+
+}
+.fa.fa-twitter:hover{
+    color:#1A91DA;
+
+}
+.fa.fa-linkedin:hover{
+    color: #0A66C2;
+}
+.fa.fa-facebook:hover{
+    color: #0A82ED;
+}
+
+ .general-5{
+    display: flex;
+    align-items: center;
+    height: 700px;
+    flex-direction:row;
+    background:goldenrod; 
+} 
+
+img{
+    filter: drop-shadow(2px 4px 8px #585858);
+}
+/* Responsividade */
+@media  screen and (min-width: 500px) and (max-width:900px) {
+    .general {
+        font-size: 5px;
+        margin-bottom: 28px;
+    }
+} 
+  
+@media  screen and (min-width: 777px) and (max-width:900px) {
+    .nav-bar {
+       display: none;
+    }
+} 
+  
+@media screen and (min-width: 400px) and (max-width:900px) {
+    .box {
+        font-size: 5px;
+        margin:28px 100px;
+       
+    }
+}
+  
+@media screen and (min-width: 500px) and (max-width:900px){
+    h4 {
+        font-size:35px;
+        margin:20px;
+       
+    }
+}
+
+@media  screen and (max-width: 600px) {
+    h5 {
+        font-size:10px;
+        margin:20px;
+    }
+}
+
+
+@media screen and (min-width: 500px) and (max-width:1000px)  {
+    .row{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+} 
+
+@media screen and (min-width: 500px) and (max-width:1000px)  {
+    .general-4{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 2000px;
+    }
+}
+
+@media  screen and (min-width: 500px) and (max-width:900px){
+    body {
+      background-color: #F4F4F4;;
+    }
+}
+

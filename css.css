@@ -1,0 +1,298 @@
+/* Google Fonts*/
+*{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* beginning of header */
+section{
+    position: relative;
+    min-height: 100vh;
+    min-width: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    position: absolute;
+    left: 0px;
+    top:0px;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px
+}
+
+.general{
+    position: relative;
+    background-image: url("./img/pexels-anna-shvets-5324939.jpg"); 
+    height: 800px;
+    overflow: hidden;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.D_logo{
+    padding: 5px;
+    height: 80px;
+}
+/*  End of Header */
+
+
+/*  Start of nav-bar */
+ul{
+    display: flex;
+    position: relative;
+}    
+
+ul li {
+    list-style: none;
+}    
+
+ul li a {
+    display:inline-block ;
+    color: black;
+    font-weight: 800;
+    margin-left: 40px;
+    text-decoration: none;
+}    
+
+ul li a:hover{
+    color:white;
+}    
+/* end of nav-bar */
+
+/* start from Text-essential */
+.text{
+    display: flex;
+    min-width: 100vw;
+    min-height: 100vh;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top:-250px;
+} 
+
+h1{
+    font-size: 7em;
+    color: black;
+}
+
+p{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1em;
+    letter-spacing: 2px;
+}
+
+button {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+    margin: 20px;
+}
+.success {
+    border-color: #04AA6D;
+    color:green ;
+}
+  
+.success:hover {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.info {
+    border-color: #2196F3;
+    color: dodgerblue;
+}
+  
+.info:hover {
+    background: #2196F3;
+    color: white;
+}
+
+/* end from Text-essential */
+
+/* Start from efects-hover */
+.general-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 800px;
+    background:whitesmoke;
+}
+
+.container{
+    width:1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: #000;
+    box-shadow: 0 30px 30px rgba(0, 0, 0.5);    
+}
+
+.box .imgBX{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.box .imgBX img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.box:hover .imgBX img{
+    opacity: 0;
+}
+
+.box .content{
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+    width: 80%;
+    height: 60px;
+    background: #fff;
+    transition: 0.5s;
+    overflow: hidden;
+
+    padding: 15px;
+}
+
+.box:hover .content{
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left:0
+}
+
+.box .content h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.box .content p {
+    margin: 10px 0 0 ; 
+    padding: 0;
+    opacity:0;
+    line-height: 1.2em; 
+    transition: 0.5s;
+    text-align: justify;
+    font-size: 13px;
+}
+
+.box:hover .content p {
+    opacity: 1;
+    transition-delay:0.5s ;
+
+}
+/* end from efects-hover  */
+
+.general-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+    background:#fff1e6;
+}
+
+h4{
+    text-align: center;
+    font-size: 5em;
+}
+
+h5{
+    text-align: center;
+    font-weight: 900;
+} 
+
+span{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 120px;
+    font-weight: 800;
+}
+.column-1 {
+    float: left;
+    width: 17%;
+    padding: 10px;
+    height: 350px; 
+    margin: 30px;
+    background-color:transparent
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+}
+
+span{
+    line-height: 1.2em; 
+    transition: 0.5s;
+    text-align: justify;
+    font-size: 13px;
+}
+
+.general-4{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    height: 800px;
+    background:gold;
+}
+ 
+.img{
+    margin: 10px;
+}
+/* end of Feedbacks */
+
+.h2{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction:row;
+    letter-spacing: 10px;
+    margin-left: 10px;
+}
+
